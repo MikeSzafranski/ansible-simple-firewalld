@@ -1,0 +1,14 @@
+---
+- hosts: all
+  vars_files:
+    - vars/main.yml
+  roles:
+    - role: geerlingguy.firewall
+      become: yes
+      become_method: sudo
+  tasks:
+    - name: enable http
+      firewalld:
+        service: https
+        permanent: yes
+        state: enabled
