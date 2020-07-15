@@ -1,2 +1,2 @@
 [all]
-192.168.128.198 ansible_user=root ansible_ssh_pass=r3dh4t1! ansible_python_interpreter=/usr/bin/python3
+192.168.128.198 ansible_user=root ansible_ssh_pass=r3dh4t1!
