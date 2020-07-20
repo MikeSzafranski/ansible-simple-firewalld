@@ -1,7 +1,10 @@
 ---
 - hosts: all
+  vars:
+    ansible_host: "{{ vm_ip }}"
   vars_files:
     - vars/main.yml
+    - vars.yaml
   roles:
     - role: geerlingguy.firewall
       become: yes
