@@ -7,10 +7,10 @@
     - vars.yaml
   roles:
     - role: geerlingguy.firewall
-      become: yes
   tasks:
     - name: enable http
       firewalld:
         service: https
         permanent: yes
         state: enabled
+  become: yes
