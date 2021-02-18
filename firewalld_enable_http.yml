@@ -13,6 +13,5 @@
         service: https
         permanent: yes
         state: enabled
-  become: yes
-  become_user: root
-  
+  become-method: su
+
