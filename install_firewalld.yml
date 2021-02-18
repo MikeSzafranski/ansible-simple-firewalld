@@ -6,5 +6,3 @@
       yum:
         name: firewalld
         state: latest
-
-  become: true
