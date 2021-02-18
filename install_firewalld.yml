@@ -7,10 +7,11 @@
         name: firewalld
         state: latest
       become: yes
-    
+      
     - name: Install Ansible Python 2 Dependencies
       with_items:
       - python-firewall
       dnf:
         name: "{{item}}"
       state: present
+      become: yes
