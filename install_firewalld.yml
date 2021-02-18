@@ -13,5 +13,5 @@
       - python-firewall
       dnf:
         name: "{{item}}"
-      state: present
+        state: present
       become: yes
