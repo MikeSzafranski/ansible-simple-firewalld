@@ -9,9 +9,7 @@
       become: yes
       
     - name: Install Ansible Python 2 Dependencies
-      with_items:
-      - python-firewall
       dnf:
-        name: "{{item}}"
+        name: python-firewall
         state: present
       become: yes
