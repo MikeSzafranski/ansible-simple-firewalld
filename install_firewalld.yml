@@ -7,4 +7,4 @@
         name: firewalld
         state: latest
 
-  become: yes
+  become: true

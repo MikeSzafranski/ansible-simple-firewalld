@@ -8,4 +8,4 @@
         enabled: yes
         masked: no
 
-  become: yes
+  become: true
