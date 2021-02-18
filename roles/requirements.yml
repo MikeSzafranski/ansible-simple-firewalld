@@ -1,3 +1,4 @@
 # from galaxy
 - name: ahuffman.scan_sudoers
 - name: yatesr.timezone
+- name: dockpack.hardened7
