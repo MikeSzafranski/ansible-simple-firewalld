@@ -1,10 +1,10 @@
 ---
 - hosts: localhost
-  vars:
-    ansible_host: "{{ vm_ip }}"
+  # vars:
+  #   ansible_host: "{{ vm_ip }}"
   vars_files:
     - vars/main.yml
-    - vars.yaml
+    # - vars.yaml
   roles:
     - role: geerlingguy.firewall
   tasks:
