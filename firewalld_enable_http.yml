@@ -13,5 +13,5 @@
         service: https
         permanent: yes
         state: enabled
-  become-method: su
+  become_method: su
 
