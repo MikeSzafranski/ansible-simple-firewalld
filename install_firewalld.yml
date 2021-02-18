@@ -1,8 +1,9 @@
 ---
-- hosts: localhost
+- hosts: all
 
   tasks:
     - name: install firewalld
       yum:
         name: firewalld
         state: latest
+      become: yes
