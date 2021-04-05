@@ -1,0 +1,3 @@
+# free-form (string) arguments, all arguments on one line
+- name: Run command if /path/to/database does not exist (without 'args')
+  ansible.builtin.command: /usr/bin/make_database.sh db_user db_name creates=/path/to/database
