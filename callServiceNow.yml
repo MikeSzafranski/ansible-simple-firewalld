@@ -1,6 +1,15 @@
-# free-form (string) arguments, all arguments on one line
 ---
- - name: This command will change the working directory to somedir/
-  ansible.builtin.shell:
-    cmd: ls -l 
-    chdir: /home
+- hosts: all
+
+  tasks:
+    - name: Install Firewalld
+      yum:
+        name: firewalld
+        state: latest
+      become: yes
+      
+    - name: Install Ansible Python 2 Dependencies
+      dnf:
+        name: python-firewall
+        state: present
+      become: yes
