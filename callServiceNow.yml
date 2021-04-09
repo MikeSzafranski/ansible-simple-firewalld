@@ -1,5 +1,6 @@
-# free-form (string) arguments, some arguments on separate lines with the 'args' keyword
-# 'args' is a task keyword, passed at the same level as the module
-- name: Run python command
-  ansible.builtin.command:  /var/lib/awx/venv/awx/bin/python updateBA.py
-  
+---
+- hosts: ${target}
+  become: true
+  tasks:
+  - name: Copy and Execute the script
+    script: /home/mikesz/updateBA.py 
