@@ -5,7 +5,7 @@
   - name: List  the script
     shell: ls -l /ansible
   - name: call python
-    shell: /var/lib/awx/venv/awx/bin/python /ansible/callServiceNow.py. {{sys_id}} {{table}} {{description}}
+    shell: /var/lib/awx/venv/awx/bin/python /ansible/callServiceNow.py {{sys_id}} {{table}} {{description}}
   - name: echo
     shell: echo '{{sys_id}}'
   
