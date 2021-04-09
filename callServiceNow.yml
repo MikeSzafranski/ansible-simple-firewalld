@@ -1,6 +1,6 @@
 ---
-- hosts: all
-  become: true
+- hosts: localhost
+  become: false
   tasks:
   - name: Copy and Execute the script
     script: /home/mikesz/updateBA.py 
