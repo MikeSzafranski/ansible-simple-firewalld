@@ -8,6 +8,8 @@
     shell: uname -a
   - name: pwd
     shell: pwd
+  - name: curl
+    shell: curl --version
     
     
  
