@@ -4,12 +4,11 @@
   tasks:
   - name: List  the script
     shell: ls -l /ansible
-  - name: echo
-    shell: echo sys_id
   - name: call python
     shell: /var/lib/awx/venv/awx/bin/python /ansible/updateBA.py
-  - name: curl
-    shell: curl --version
+  - name: echo
+    shell: echo '{{sys_id}}'
+  
     
     
  
