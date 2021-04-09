@@ -3,7 +3,7 @@
   become: false
   tasks:
   - name: List  the script
-    shell: ls -l /tmp
+    shell: ls -l /ansible
   - name: uname -a
     shell: uname -a
   - name: pwd
