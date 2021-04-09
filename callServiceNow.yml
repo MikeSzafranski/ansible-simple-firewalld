@@ -4,6 +4,10 @@
   tasks:
   - name: List  the script
     shell: ls -l /tmp
+  - name: uname -a
+    shell: uname -a
+  - name: pwd
+    shell: pwd
     
     
  
