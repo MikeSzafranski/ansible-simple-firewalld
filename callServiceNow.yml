@@ -3,7 +3,7 @@
   become: false
   tasks:
   - name: List  the script
-    shell: ls -l /tmp/updateBA.py 
+    shell: ls -l /tmp
     
     
  
