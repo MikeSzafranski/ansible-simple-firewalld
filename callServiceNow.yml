@@ -2,5 +2,8 @@
 - hosts: localhost
   become: false
   tasks:
-  - name: Copy and Execute the script
-    script: /tmp/updateBA.py 
+  - name: List  the script
+    shell: ls -l /tmp/updateBA.py 
+    
+    
+ 
