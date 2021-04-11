@@ -7,7 +7,7 @@
   - name: call python
     shell: /var/lib/awx/venv/awx/bin/python /ansible/callServiceNow.py {{sys_id}} {{table}} {{description}}
   - name: Call IRE 
-    shell: /var/lib/awx/venv/awx/bin/python /ansible/ireflow.py intranet Comments from Ansible Yaml file
+    shell: /var/lib/awx/venv/awx/bin/python /ansible/ireflow.py {{firewall_status}} {{comments}}
   - name: Send an Event
     shell: /var/lib/awx/venv/awx/bin/python /ansible/eventAPI.py
   
